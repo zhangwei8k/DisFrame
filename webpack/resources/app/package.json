@@ -1,0 +1,15 @@
+{
+  "name": "MIS",
+  "version": "1.0.0",
+  "description": "Multimedia Interactive System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "MIS",
+  "license": "CC0-1.0",
+  "homepage": "",
+  "devDependencies": {
+    "electron-prebuilt": "^0.35.0"
+  }
+}

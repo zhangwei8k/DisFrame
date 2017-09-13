@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+
+
+/*Index*/
+
+/*Video*/
+#Video video{}
+
+
+/*Nav*/
+#Nav .nav{
+    position: absolute; top: 1657px;
+    width: 200px; height: 200px;
+}
+#Nav .nav1{
+    left: 202px; background: url("../img/nav/nav1.png") no-repeat;
+}
+#Nav .nav2{
+    left: 436px; background: url("../img/nav/nav2.png") no-repeat;
+}
+#Nav .nav3{
+    left: 669px; background: url("../img/nav/nav3.png") no-repeat;
+}
+#Nav .next{
+    position: absolute; left: 953px; top: 1648px;
+    width: 127px; height: 200px;
+    background: url("../img/nav/next.png") no-repeat;
+}
+#Nav .nav4{
+    left: 146px; background: url("../img/nav/nav4.png") no-repeat;
+}
+#Nav .nav5{
+    left: 366px; background: url("../img/nav/nav5.png") no-repeat;
+    display: none;
+}
+#Nav .nav6{
+    left: 582px; background: url("../img/nav/nav6.png") no-repeat;
+    display: none;
+}
+#Nav .nav7{
+    left: 798px; background: url("../img/nav/nav7.png") no-repeat;
+    display: none;
+}
+#Nav .pre{
+    position: absolute; left: 0px; top: 1658px;
+    width: 167px; height: 200px;
+    background: url("../img/nav/pre.png") no-repeat;
+    display: none;
+}
+
+/*Page*/
+.Page .nav{
+    position: absolute; left: 231px; top: 1763px;
+    width: 619px; height: 128px;
+    /*background: url("../img/page_nav.png") no-repeat;*/
+    z-index: 8;
+}
+.Page .nav .nav_i1{
+    position: absolute; left: 0px; top: 0px;
+    width: 190px; height: 128px;
+    background: url("../img/page_nav_i1.png") no-repeat;
+}
+.Page .nav .nav_i2{
+    position: absolute; left: 190px; top: 0px;
+    width: 239px; height: 128px;
+    background: url("../img/page_nav_i2.png") no-repeat;
+}
+.Page .nav .nav_i3{
+    position: absolute; left: 429px; top: 0px;
+    width: 190px; height: 128px;
+    background: url("../img/page_nav_i3.png") no-repeat;
+}
+
+.Page .swiper-button-prev{
+    position: absolute; left: 98px; top: 1702px;
+    width: 247px; height: 218px;
+    background-image: inherit;
+    z-index: 9;
+}
+.Page .swiper-button-next{
+    position: absolute; left: 726px; top: 1702px;
+    width: 247px; height: 218px;
+    background-image: inherit;
+    z-index: 9;
+}
+.Page .home{
+    position: absolute; left: 417px; top: 1702px;
+    width: 247px; height: 218px;
+    z-index: 9;
+}

@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<!--终端框架结构 ; verson 1.2.0 ; verson-data 2015-12-18-->
+<html>
+<head lang="cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DIS系统</title>
+
+    <!--基础插件-->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/velocity/velocity.js"></script>
+    <script src="lib/websocket/ws.js"></script>
+
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <script src="lib/swiper/js/swiper.js"></script>
+
+    <script src="lib/dis.js"></script>
+    <script src="lib/dis_media.js"></script>
+
+    <!--主程序-->
+    <script src="../../../../assets/config.js"></script>
+    <script src="js/init.js"></script>
+    <!--<script src="js/mp3.js"></script>-->
+    <link rel="stylesheet" href="../../../../assets/css/inc.css">
+
+    <!--模块程序-->
+    <link rel="stylesheet" href="../../../../assets/css/index.css">
+    <script src="js/index.js"></script>
+
+</head>
+
+<body ondragstart="return false" onselect="return false" onselectstart="return false" oncontextmenu="return false">
+<div id="CC">
+<!-- style="transform:scale(0.5); transform-origin: top left;" -->
+    <div id="_unable"></div>
+
+    <section class="cc" id="Loader">
+        <img src="../../../../assets/img/loader.svg" width="88" alt="">
+        <div class="word"></div>
+    </section>
+
+    <section class="cc" id="Index">
+        <img src="../../../../assets/img/index.png" alt="">
+    </section>
+
+    <section class="cc" id="Video">
+        <video id="v" src="../../../../assets/video/v.mp4" height="1920"></video>
+    </section>
+
+    <section class="cc" id="Nav">
+        <img src="../../../../assets/img/nav.png" alt="">
+
+        <div class="nav nav1" data-id="1"></div>
+        <div class="nav nav2" data-id="2"></div>
+        <div class="nav nav3" data-id="3"></div>
+        <div class="next"></div>
+
+        <div class="pre"></div>
+        <div class="nav nav4" data-id="4"></div>
+        <div class="nav nav5" data-id="5"></div>
+        <div class="nav nav6" data-id="6"></div>
+        <div class="nav nav7" data-id="7"></div>
+
+    </section>
+
+    <section class="cc Page" id="Page1">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page1/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+    <section class="cc Page" id="Page2">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page2/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+    <section class="cc Page" id="Page3">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page3/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+    <section class="cc Page" id="Page4">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page4/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+    <section class="cc Page" id="Page5">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page5/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+    <section class="cc Page" id="Page6">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page6/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+    <section class="cc Page" id="Page7">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="../../../../assets/img/page7/12.png" alt=""></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_i1"></div>
+            <div class="nav_i2"></div>
+            <div class="nav_i3"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="home"></div>
+    </section>
+
+</div>
+
+</body>
+
+<script>
+    $(window).load(()=>Dis.loader());
+    document.getElementById("CC").addEventListener('touchmove', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
+</script>
+
+</html>
